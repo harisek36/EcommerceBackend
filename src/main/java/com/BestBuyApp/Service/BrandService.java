@@ -17,6 +17,8 @@ public class BrandService implements ServiceDesign {
 
     @Override
     public String createBrand(Brand newBrand) {
+
+        //try catch
         if(repositoryAccess.createBrand(newBrand))
             return "Brand Created successfully";
         else
