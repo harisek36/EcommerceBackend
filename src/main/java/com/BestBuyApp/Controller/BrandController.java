@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@RestController(value = "/")
+@RestController
+@RequestMapping("/")
 public class BrandController implements ControllerDesign  {
 
     @Autowired

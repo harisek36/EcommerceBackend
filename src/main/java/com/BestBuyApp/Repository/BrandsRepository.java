@@ -22,7 +22,8 @@ public class BrandsRepository implements RepositoryDesign {
 
     @Override
     public boolean createBrand(Brand newBrand) {
-        if(newBrand.get_id()!=null && newBrand.get_name()!=null && newBrand.get_description()!=null){
+        //newBrand.get_id()!=null &&
+        if(newBrand.get_name()!=null && newBrand.get_description()!=null){
 
             Brand brand = new Brand(brandsStore.size()+1+"",newBrand.get_name(),newBrand.get_description());
             brandsStore.put(brandsStore.size()+1+"",brand);

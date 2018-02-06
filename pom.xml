@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>BestBuyApp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>bestbuyapp</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>BestBuyApp</name>
@@ -35,6 +35,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.19</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -44,6 +52,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<!--Final name-->
+		<finalName>egaints-springboot-app</finalName>
 	</build>
 
 
